@@ -1,1 +1,34 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --secondary-font: Inter;
+  --primary-font: 'PressStart2P';
+  --font-weight-card-title: 715;
+  --font-weight-card-description: 410;
+
+  --color-button-icon: #fff;
+  --color-button-text: #fff;
+  --color-button-bg: #fff;
+  --color-button-bg-animation: #000;
+
+  --color-text: #000;
+  --color-border: #000;
+
+  --color-box-shadow-button: #000;
+
+  --background-color-open-dialog: rgba(0 0 0 / 75%);
+  --bg-color-decor-header: #fff;
+
+  --width-block: clamp(375px, 100vw, 700px);
+
+  --background-linear-gradient: repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+  repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+  linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --color-contour-heart-button: #000;
+ 
+
+  --color-hover-heart-button: #000;
+  --color-active-heart-button: #FF0000;
+  --color-heart: #FF0000;
+
+  --liked-contour-fill-color: #FF0000;
+} 
