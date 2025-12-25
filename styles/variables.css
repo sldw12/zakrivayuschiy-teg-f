@@ -1,34 +1,21 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --secondary-font: Inter;
-  --primary-font: 'PressStart2P';
-  --font-weight-card-title: 715;
-  --font-weight-card-description: 410;
-
-  --color-button-icon: #fff;
-  --color-button-text: #fff;
-  --color-button-bg: #fff;
-  --color-button-bg-animation: #000;
-
-  --color-text: #000;
-  --color-border: #000;
-
-  --color-box-shadow-button: #000;
-
-  --background-color-open-dialog: rgba(0 0 0 / 75%);
-  --bg-color-decor-header: #fff;
-
-  --width-block: clamp(375px, 100vw, 700px);
-
-  --background-linear-gradient: repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
-  repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
-  linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-
-  --color-contour-heart-button: #000;
- 
-
-  --color-hover-heart-button: #000;
-  --color-active-heart-button: #FF0000;
-  --color-heart: #FF0000;
-
-  --liked-contour-fill-color: #FF0000;
-} 
+  --main-font: 'Inter-Variable';
+  --main-font-text-weight: 410;
+  --main-font-title-weight: 715;
+  --main-font-size: 18px;
+  --accent-font-size-watermark: 14px;
+  --acent-font-size-button: 14px;
+  --accent-font: 'PressStart2P';
+  --cover-image: 
+  repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+  linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --block-width: clamp(375px, 260.565px + 30.516vw, 700px);
+  --main-border: 2px solid black;
+  --accent-color: #000;
+  --main-color: #fff;
+  --animation-contour-color: black;
+  --animation-fill-color: red;
+  --animation-sparkle-color: red;
+}
