@@ -186,8 +186,11 @@
 }
 
 .save__button {
-  height: 100%;
-  padding: 15px 17px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-bg, #fff);
+  padding: 18px 20px;
 }
 
 .save__button-image {
@@ -342,6 +345,10 @@
 }
 
 @media (width <= 375px) {
+  
+  .card__title {
+    padding: 5px 10px 7px; 
+  }
   .save__button {
     display: flex;
     flex-direction: column;
