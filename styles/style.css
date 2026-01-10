@@ -137,6 +137,9 @@
   z-index: 1;
   line-height: 90%;
   mix-blend-mode: difference;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .card__text-container {
@@ -165,6 +168,7 @@
   padding: 0;
   outline: 2px solid transparent;
   background-color: transparent;
+  flex-shrink: 0;
 }
 
 .card__icon-button:focus {
@@ -175,8 +179,37 @@
   outline-color: var(--accent-color);
 }
 
+
 .card__like-button {
-  height: 100%;
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  height: 38px;
+  min-height: 38px;
+  max-height: 38px;
+  padding: 10.5px 35px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+.card__icon-button:active,
+.card__like-button:active {
+  transform: none;
+  scale: 1;
+}
+
+.card__icon-button:active {
+  width: 39px;
+  height: 34.8px;
+}
+
+.card__like-button:active {
+  width: 130px;
+  height: 38px;
   padding: 10.5px 35px;
 }
 
@@ -272,12 +305,13 @@
   transition: fill 0.3s linear 0.05s;
 }
 
-.like-icon:active .core {
+
+.like-icon:has(:active) .core {
   fill: var(--animation-fill-color);
   transition: 0.3s linear 0;
 }
 
-.like-icon:active .main-body {
+.like-icon:has(:active) .main-body {
   fill: var(--animation-fill-color);
   transition: fill 0.3s linear 0.05s;
 }
@@ -297,8 +331,9 @@
   transition: 0.3s linear 0.06s;
 }
 
+
 .like-icon.is-liked {
-  animation: heart-scale 0.3s ease-in 0.1s;
+  animation: none;
 }
 
 .like-icon {
@@ -351,10 +386,22 @@
   }
   .save__button {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: row; 
     gap: 8px;
-    padding: 12px 18px;
+    padding: 15px 20px; 
+    width: 335px; 
+    height: 55px; 
+    min-height: 55px;
+    max-width: 335px;
+    max-height: 55px;
+     box-sizing: border-box;
+  }
+
+   .save__button-container {
+    margin-top: 527px;
+    margin-bottom: 50px; 
   }
 
   .header {
@@ -366,8 +413,8 @@
   }
 
   .save__button-image {
-    inline-size: 28px;
-    block-size: 28px;
+    inline-size: 21px; 
+    block-size: 21px;
   }
 
   .card__button-container {
