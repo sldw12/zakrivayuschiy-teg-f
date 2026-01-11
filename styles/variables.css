@@ -1,21 +1,37 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: 'Inter-Variable';
-  --main-font-text-weight: 410;
-  --main-font-title-weight: 715;
-  --main-font-size: 18px;
-  --accent-font-size-watermark: 14px;
-  --acent-font-size-button: 14px;
-  --accent-font: 'PressStart2P';
-  --cover-image: 
-  repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
-  repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
-  linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-  --block-width: clamp(375px, 260.565px + 30.516vw, 700px);
-  --main-border: 2px solid black;
-  --accent-color: #000;
-  --main-color: #fff;
-  --animation-contour-color: black;
-  --animation-fill-color: red;
-  --animation-sparkle-color: red;
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P';
+    --card-title-font-weight: 715;
+    --main-font-weight: 410;
+    --font-size: 18px;
+    --gradient-liner-vertical: repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px);
+    --gradient-liner-horizontal: repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px);
+    --gradient-blackout: linear-gradient(to bottom,#e7e7e7 0.01%,#1a1a1a 100%);
+    --label-stroke-color: #fff;
+    --heart-contour-color: #000;
+    --heart-main-color: #FF0000;
+    --heart-sparks-color: #ff0000;
+    --page-width: clamp(20rem, 13.2143rem + 33.9286vw, 43.75rem);
+    --header-title-font-size: clamp(3.063rem, 1.909rem + 4.92vw, 4.063rem);
+    --header-sub-font-size: clamp(0.875rem, 0.226rem + 2.77vw, 1.438rem);
+    --save-button-inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+    
+}
+
+@media (max-width: 425px) {
+  :root {
+    --page-width: 100vw;
+  }
+}
+
+@media (width < 375px) {
+  :root {
+    --header-title-font-size: clamp(
+      1.875rem,
+      -5.0341rem + 34.5455vw,
+      3.0625rem
+    );
+    --save-button-inline-size: min-content;
+  }
 }
